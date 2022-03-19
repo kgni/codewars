@@ -26,6 +26,6 @@ Ranked: 7 kyu
 Total Completed Kata: 17
 
 - 8kyu Completed: 16/388
-- 7kyu Completed: 01/388
+- 7kyu Completed: 01/1895
 
 ### Thanks for checking these out!
