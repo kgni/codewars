@@ -21,8 +21,7 @@ function findDifference(a, b) {
 	return cubeOne > cubeTwo ? cubeOne - cubeTwo : cubeTwo - cubeOne;
 }
 
-/* 
-function find_difference(a, b) {
+/* function findDifference(a, b) {
   return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
 }
 */
