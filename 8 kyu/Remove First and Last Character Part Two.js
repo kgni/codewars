@@ -1,4 +1,4 @@
-// March 28, 2022
+// April 05, 2022
 
 /*
 This is a spin off of my first kata.
@@ -18,3 +18,28 @@ Examples
 "1"    =>  NULL
 "1,2"  =>  NULL
 */
+
+// array methods
+function array(arr) {
+	return arr.split(',').slice(1, -1).join(' ') || null;
+}
+
+function array(arr) {
+	arr = arr.split(',');
+
+	if (arr.length < 3) {
+		return null;
+	}
+
+	return arr.slice(1, -1).join(' ');
+}
+
+// With replace all
+
+function array(str) {
+	if (str.length < 4) {
+		return null;
+	}
+
+	return str.replaceAll(',', ' ').slice(1, -1).trim();
+}
