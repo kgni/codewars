@@ -18,3 +18,8 @@ ENJOY CODING :)
 function sumOfMinimums(arr) {
 	return arr.map((arr) => Math.min(...arr)).reduce((acc, c) => acc + c);
 }
+
+// Only with reduce
+function sumOfMinimums(arr) {
+	return arr.reduce((acc, c) => acc + Math.min(...c), 0);
+}
