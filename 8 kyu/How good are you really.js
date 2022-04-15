@@ -16,3 +16,11 @@ function betterThanAverage(classPoints, yourPoints) {
 		classPoints.reduce((acc, c) => acc + c, 0) / classPoints.length;
 	return yourPoints > avgScore ? true : false;
 }
+
+// Could also be done with less code like this:
+
+function betterThanAverage(classPoints, yourPoints) {
+	return (
+		yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
+	);
+}
