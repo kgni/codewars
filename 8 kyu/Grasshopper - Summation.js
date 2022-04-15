@@ -19,3 +19,7 @@ var summation = function (num) {
 	}
 	return sum;
 };
+
+// Cheating with math LMAO
+
+const summation = (n) => (n * (n + 1)) / 2;
