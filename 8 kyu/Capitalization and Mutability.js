@@ -14,3 +14,8 @@ function capitalizeWord(word) {
 // With arrow function
 
 const capitalizeWord = (word) => word[0].toUpperCase() + word.slice(1);
+
+// With .replace() string method
+
+const capitalizeWord = (word) =>
+	word.replace(word.charAt(0), word.charAt(0).toUpperCase());
