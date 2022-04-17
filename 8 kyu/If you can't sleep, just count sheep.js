@@ -20,5 +20,5 @@ let countSheep = function (num) {
 
 // Can also be done by creating an array with as many elements as the number we input:
 
-const countSheep = (n) =>
+const countSheep2 = (n) =>
 	[...Array(n)].map((el, index) => `${index + 1} sheep...`).join('');
