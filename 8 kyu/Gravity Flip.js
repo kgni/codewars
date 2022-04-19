@@ -27,4 +27,4 @@ const flip = (d, a) =>
 
 // Could also be written where you are using the ternary operator on the return value of the sort instead (this way you don't need to use .sort() method twice)
 
-const flip = (d, a) => a.sort((x, y) => (d === 'R' ? x - y : y - x));
+const flip2 = (d, a) => a.sort((x, y) => (d === 'R' ? x - y : y - x));
