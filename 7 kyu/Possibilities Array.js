@@ -10,5 +10,6 @@ a.length-1=3
 a includes [0,3] ,hence the function should return true
 */
 function isAllPossibilities(x) {
-	return x.length - 1 === x.sort((a, b) => a - b)[x.length - 1];
+	x = x.slice().sort((a, b) => a - b);
+	return x.length > 0 ? x.every((a, i) => a === i) : false;
 }
