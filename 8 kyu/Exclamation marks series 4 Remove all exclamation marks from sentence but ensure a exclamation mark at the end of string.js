@@ -24,3 +24,7 @@ function remove(string) {
 			.join('') + '!'
 	);
 }
+
+// COULD ALSO BE DONE BY SPLITTING AND THEN JOINING
+
+const remove = (string) => string.split('!').join('') + '!';
