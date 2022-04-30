@@ -51,7 +51,7 @@ let gimme = function (inputArray) {
 	return index;
 };
 
-// With indexOf and sort method... We can do this, because we know there are always going to be exactly 3 elements. So if we sort the array and pick the middle element, and then pass that value as an arugment to the indexOf array method, then we will get the indexOf the middle elements value returned. The reason we are using Array.from(a) is to copy the original array, because .sort() is a mutable array method, and we don't want the original to be sorted, because then we wont get the right value returned.
+// With indexOf and sort method... We can do this, because we know there are always going to be exactly 3 elements. So if we sort the array and pick the middle element, and then pass that value as an argument to the indexOf array method, then we will get the indexOf the middle elements value returned. The reason we are using Array.from(a) is to copy the original array, because .sort() is a mutable array method, and we don't want the original to be sorted, because then we wont get the right value returned.
 
 function gimme(a) {
 	return a.indexOf(

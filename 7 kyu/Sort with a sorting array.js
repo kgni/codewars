@@ -10,6 +10,18 @@ sort(initialArray, sortingArray) => ['z', 'x', 'y']
 sort(['z', 'x', 'y'], [0, 2, 1]) => ['z', 'y', 'x']
 */
 
+// With fill and splice
+function sort(initialArray, sortingArray) {
+	const newArr = Array(initialArray.length);
+	newArr.fill(0);
+
+	for (let i = 0; i < initialArray.length; i++) {
+		newArr.splice(sortingArray[i], 1, initialArray[i]);
+	}
+
+	return newArr;
+}
+
 function sort(initialArray, sortingArray) {
 	let n = initialArray.length;
 	let result = [];
