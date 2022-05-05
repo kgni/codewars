@@ -17,3 +17,7 @@ function findLongest(str) {
 	}
 	return length;
 }
+
+// With map and arrow function:
+
+const findLongest = (str) => Math.max(...str.split(' ').map((x) => x.length));
