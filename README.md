@@ -23,9 +23,10 @@ These challenges are a study tool for me, so you'll likely see a lot of repetiti
 
 Ranked: 5 kyu
 
-Total Completed Kata: 136
+Total Completed Kata: 178
 
-- 8kyu Completed: 115/388
-- 7kyu Completed: 21/1895
+- 8kyu Completed: 153/388
+- 7kyu Completed: 24/1895
+- 6kyu Completed: 01/1983
 
 ### Thanks for checking these out!
