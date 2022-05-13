@@ -21,9 +21,8 @@ function spEng(sentence) {
 
 	return sentence.toLowerCase().includes('english');
 }
-
 // E
 
-console.log('Hello my name is'); // false
-console.log('I know how to speak English'); // true
-console.log('my name isEngLISh'); // true
+spEng('Hello my name is');
+spEng('I know how to speak English');
+spEng('my name isEngLISh');
