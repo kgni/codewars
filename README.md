@@ -28,5 +28,3 @@ Total Completed Kata: 199
 - 8kyu Completed: 171/388
 - 7kyu Completed: 26/1895
 - 6kyu Completed: 02/1983
-
-### Thanks for checking these out!
