@@ -1,6 +1,6 @@
 # :trophy: Daily Coding Challenges
 <img src="https://www.codewars.com/users/kgni/badges/large">
-This repository is just where I collect my daily coding challenge solutions.
+This repository is where I collect my daily coding challenge solutions.
 
 ## :thinking: Why?
 
