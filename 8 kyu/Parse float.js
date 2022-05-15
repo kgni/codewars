@@ -10,16 +10,12 @@ Write function parseF which takes an input and returns a number or null if conve
 //R - number if it is possible to parse input as a float, null if not
 
 function parseF(s) {
-	s = Number(s);
-	if (isNaN(s)) {
-		return null;
-	} else {
-		return Number(s).toFixed(1);
-	}
+	// Parse input as float, if the input parsed in not a number, return null else returned the parsed number.
+	return isNaN(parseFloat(s)) ? null : parseFloat(s);
 }
 
 //E -
 
-console.log(parseF('1')); // 1.0
+console.log(parseF()); // 1.0
 
 console.log(parseF('Hello')); // null
