@@ -60,7 +60,7 @@ function barista(coffees) {
 	return minutes.reduce((acc, c) => acc + c, 0);
 }
 
-//E -
+// A little less confusing:
 
 function barista(coffees) {
 	if (coffees.length === 0) {
