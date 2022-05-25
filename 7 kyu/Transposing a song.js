@@ -129,6 +129,7 @@ function transpose(song, interval) {
 		(el) => nodesArray[nodesArray.indexOf(el) + 24 + interval]
 	);
 }
+
 //E -
 
 console.log(transpose(['A'], 1)); // ['A#']
