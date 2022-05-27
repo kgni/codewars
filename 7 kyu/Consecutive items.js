@@ -6,11 +6,15 @@ You are given a list of unique integers arr, and two integers a and b. Your task
 It is guaranteed that a and b are both present in arr.
 */
 
-//PREP
+// Using .some()
 
-//P -
-//R -
+function consecutive(arr, a, b) {
+  return arr.some((el, index) => {
+    return el === a && arr[index+1] === b || el === b && arr[index+1] === a
+  })
+}
 
+// Using .filter()
 function consecutive(arr, a, b) {
 	const newArr = arr.filter((el, index) => {
 		if (arr[index] === a && arr[index + 1] === b) {
@@ -23,4 +27,9 @@ function consecutive(arr, a, b) {
 
 	return newArr.length > 0;
 }
-//E -
+
+// Using .indexOf and Math.abs()
+
+function consecutive(arr, a, b) {
+  return Math.abs(arr.indexOf(a) - arr.indexOf(b)) == 1;
+}

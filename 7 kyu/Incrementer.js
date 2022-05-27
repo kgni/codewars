@@ -17,7 +17,7 @@ Examples:
 
 //PREP
 
-//P - array of integers, array can be empty
+// P - array of integers, array can be empty
 //R - return an array where each element is incremented by its position (starting at 1), if the incremented element has 2 digits, we only want to return that elements last digit.
 
 function incrementer(nums) {
