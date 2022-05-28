@@ -19,3 +19,13 @@ function parseF(s) {
 console.log(parseF()); // 1.0
 
 console.log(parseF('Hello')); // null
+
+// Done in another way without isNaN()
+
+function parseF(s) {
+	if (parseFloat(s) === 0) {
+		return 0;
+	} else {
+		return parseFloat(s) || null;
+	}
+}
