@@ -1,4 +1,5 @@
 # :trophy: Daily Coding Challenges
+
 <img src="https://www.codewars.com/users/kgni/badges/large">
 This repository is where I collect my daily coding challenge solutions.
 
@@ -23,8 +24,8 @@ These challenges are a study tool for me, so you'll likely see a lot of repetiti
 
 Ranked: 5 kyu
 
-Total Completed Kata: 199
+Total Completed Kata: 227
 
-- 8kyu Completed: 171/388
-- 7kyu Completed: 26/1895
+- 8kyu Completed: 178/388
+- 7kyu Completed: 47/1895
 - 6kyu Completed: 02/1983
