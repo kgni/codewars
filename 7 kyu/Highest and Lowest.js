@@ -32,3 +32,10 @@ function highAndLow(numbers) {
 //E -
 
 console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'));
+
+// Could also be done this way - without using map (no need to use Number on the elements, cause Math.max() and Math.min() will convert strings automatically):
+
+function highAndLow(numbers) {
+	numbers = numbers.split(' ');
+	return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
