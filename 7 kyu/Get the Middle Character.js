@@ -27,11 +27,13 @@ The middle character(s) of the word represented as a string.
 //R - if length of the string is odd, return the middle char, if length of the string is even, return the 2 middle chars
 
 function getMiddle(str) {
-	// get length of string, divide it by 2 and minus by one, then you have the index for the middle char
-	const middleIndex = Math.ceil(str.length / 2);
+	// get length of string, divide it by 2, minus by one and Math.ceil everything so we dont get decimals, then you have the index for the middle char
+	const middleIndex = Math.ceil(str.length / 2 - 1);
 	// if length of str is uneven return str[middleIndex], if it is even, return str[middleIndex] and str[middleIndex+1]
 	console.log(middleIndex);
-	return str % 2 ? str[middleIndex] : str[middleIndex] + str[middleIndex + 1];
+	return str.length % 2
+		? str[middleIndex]
+		: str[middleIndex] + str[middleIndex + 1];
 }
 //E -
 
