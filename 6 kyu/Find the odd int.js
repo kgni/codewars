@@ -20,15 +20,15 @@ Examples
 
 function findOdd(arr) {
 	// loop through array, and create an object containing each instance of an integer as a key. Then add to that key and you will have the amount of times it appears in the array
-	const counts = {};
-	for (const num of arr) {
-		counts[num] = counts[num] ? counts[num] + 1 : 1;
-	}
+	const obj = {};
+	arr.forEach(function (el) {
+		obj[el] ? obj[el]++ : (obj[el] = 1);
+	});
 
 	// loop through object, using mod on each value to find the key that appeared an odd amount of times. then return the key as a number (because keys are strings)
 
-	for (const key in counts) {
-		if (counts[key] % 2 !== 0) {
+	for (const key in obj) {
+		if (obj[key] % 2 !== 0) {
 			return Number(key);
 		}
 	}
