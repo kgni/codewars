@@ -17,8 +17,7 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
 //R - new array with the elements from P2, removed from P1
 function arrayDiff(a, b) {
 	// loop through p1 using filter, returning all elements that are not included in p2
-	b = b.join(' ');
-	return a.filter((el) => a.includes(b));
+	return a.filter((el) => !b.includes(el));
 }
 
 //E -
