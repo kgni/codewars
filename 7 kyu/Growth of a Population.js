@@ -36,14 +36,10 @@ Don't forget to convert the percent parameter as a percentage in the body of you
 function nbYear(p0, percent, aug, p) {
 	// create count to keep track of how many years
 	let count = 0;
-	// turning the percentage into actual percentage
-	percent = percent / 100;
-	console.log(percent);
-	// while, that is going to run until p0 is bigger than p
 
 	while (p0 < p) {
 		// increasing p0 with its current value * percent + aug
-		p0 += p0 * percent + aug;
+		p0 += Math.floor(p0 * (percent / 100) + aug);
 		// add one to count every iteration
 		count++;
 	}
