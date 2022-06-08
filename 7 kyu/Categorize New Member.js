@@ -67,3 +67,25 @@ function openOrSenior(data) {
 		age > 54 && handicap > 7 ? 'Senior' : 'Open'
 	);
 }
+
+// using foreach
+
+function openOrSenior(data) {
+	var result = [];
+	data.forEach(function (member) {
+		if (member[0] >= 55 && member[1] > 7) {
+			result.push('Senior');
+		} else {
+			result.push('Open');
+		}
+	});
+	return result;
+}
+
+// using map
+
+function openOrSenior(data) {
+	return data.map((member) => {
+		return member[0] >= 55 && member[1] > 7 ? 'Senior' : 'Open';
+	});
+}
