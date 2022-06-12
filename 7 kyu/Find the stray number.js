@@ -32,6 +32,7 @@ function stray(numbers) {
 
 	for (key in obj) {
 		if (obj[key] === 1) {
+      // turn the key into a number, because all cause are strings
 			return Number(key);
 		}
 	}
@@ -39,3 +40,11 @@ function stray(numbers) {
 
 //E -
 console.log(stray([1, 1, 2])); // 2
+
+
+// using max, min and filter to check if it was the max or the min that have the length of 1:
+function stray(nums){
+  let max = Math.max(...nums);
+  let min = Math.min(...nums);
+  return nums.filter(x => x == max).length == 1 ? max : min
+}
