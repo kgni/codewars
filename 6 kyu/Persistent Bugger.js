@@ -36,6 +36,7 @@ function persistence(num) {
 		// use reduce to get the sum of all numbers multiplied
 		.reduce((acc, c) => acc * c);
 
+	// checking if the length of num is greater than 0, and if it includes a 0,if that is true, return 1
 	if (num.toString().length > 1 && num.toString().includes('0')) {
 		return 1;
 	}
@@ -65,3 +66,22 @@ function persistence(num) {
 
 console.log(persistence(39)); // 3
 console.log(persistence(4)); // 0
+
+// shorter solution
+
+function persistence(num) {
+	let times = 0;
+
+	num = num.toString();
+
+	while (num.length > 1) {
+		times++;
+		num = num
+			.split('')
+			.map(Number)
+			.reduce((a, b) => a * b)
+			.toString();
+	}
+
+	return times;
+}
