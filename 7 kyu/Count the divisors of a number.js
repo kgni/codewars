@@ -23,6 +23,7 @@ function getDivisorsCnt(n) {
 	// create for loop, looping from 1 to n (included), checking if it n is divisible by i, if yes add 1 to the counter
 
 	for (let i = 1; i <= n; i++) {
+    // check if n is dividable by i
 		if (n % i === 0) {
 			divisors++;
 		}
