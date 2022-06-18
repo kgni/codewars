@@ -14,9 +14,9 @@ More details about factorial can be found here.
 //R - return the factorial of the integer
 
 function factorial(n) {
-	// if n is below 0, throw a RangeError
-	if (n < 0) {
-		throw 'RangeError';
+	// if n is below 0, or above 12 throw a RangeError
+	if (n < 0 || n > 12) {
+		throw RangeError;
 	}
 	// if n is 0, return 1
 	if (n === 0) {
