@@ -22,10 +22,10 @@ These challenges are a study tool for me, so you'll likely see a lot of repetiti
 
 ## :medal_sports: Current Codewars Stats
 
-Ranked: 5 kyu
+Ranked: 4 kyu
 
-Total Completed Kata: 257
+Total Completed Kata: 279
 
-- 8kyu Completed: 178/388
-- 7kyu Completed: 72/1895
-- 6kyu Completed: 07/1983
+- 8kyu Completed: 184/388
+- 7kyu Completed: 86/1895
+- 6kyu Completed: 09/1983
