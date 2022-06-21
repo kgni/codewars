@@ -15,7 +15,6 @@ This example will return the string Hello, John Smith! Welcome to Phoenix, Arizo
 //R - string, greeting the person
 function sayHello(name, city, state) {
 	// join array with spaces between the elements:
-
 	// string template literal:
 	return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`;
 }
