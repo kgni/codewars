@@ -23,28 +23,29 @@ function moonRating(rating) {
 	// round to nearest 0.5
 	rating = (Math.round(rating * 2) / 2).toFixed(1);
 
+	// switch statement for all possible cases, turn rating into number
 	switch (Number(rating)) {
 		case 0.0:
 			return 'xxxxx';
 		case 0.5:
 			return 'cxxxx';
-		case 1:
+		case 1.0:
 			return 'oxxxx';
 		case 1.5:
 			return 'ocxxx';
-		case 2:
+		case 2.0:
 			return 'ooxxx';
 		case 2.5:
 			return 'oocxx';
-		case 3:
+		case 3.0:
 			return 'oooxx';
 		case 3.5:
 			return 'ooocx';
-		case 4:
+		case 4.0:
 			return 'oooox';
 		case 4.5:
 			return 'ooooc';
-		case 5:
+		case 5.0:
 			return 'ooooo';
 	}
 }
