@@ -30,5 +30,5 @@ function roundToNext5(n) {
 }
 //E -
 
-console.log(roundToNext5(0));
+console.log(roundToNext5(2));
 console.log(roundToNext5(-2));
