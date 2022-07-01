@@ -24,7 +24,7 @@ function twoSum(nums, target) {
 	for (let i = 0; i < nums.length; i++) {
 		// j starts out with being i+j because we don't want to add the same index with itself.
 		for (let j = i + 1; j < nums.length; j++) {
-			if (nums[i] + nums[j] === value) {
+			if (nums[i] + nums[j] === target) {
 				return [i, j];
 			}
 		}
