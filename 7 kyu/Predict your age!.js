@@ -29,6 +29,7 @@ function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
 		.map((age) => age * age)
 		.reduce((acc, c) => acc + c, 0);
 
+	// return the square root of the sum of the ages, divide it by 2 and round down to the nearest integer
 	return Math.floor(Math.sqrt(sumAges) / 2);
 }
 //E -
