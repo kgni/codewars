@@ -21,6 +21,7 @@ Examples (Input -- => Output):
 //R - same string sorted in alphabetical order
 
 function sortGiftCode(code) {
+  // split string into array, sort it, and join it back together to a string
 	return code.split('').sort().join('');
 }
 //E -
