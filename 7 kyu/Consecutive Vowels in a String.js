@@ -47,3 +47,23 @@ console.log(
 		'jurjfdleiifjriisiouajjfyhekkfjvnnmsuimsnvyuhvcodnmfnsumvbjshhsadkvhfeixoua'
 	)
 ); // 16
+
+// done in a bit more readable way:
+
+function getTheVowels(word) {
+	let vowelSequence = 'aeiou'; // correct sequence of vowels
+	let currentVowelIndex = 0; // index of vowel in the sequence currently being checked
+	let consecutiveCount = 0; // how many consecutive vowels are in the word
+
+	//  check every letter of the word against current vowel
+	for (letter of word) {
+		if (letter == vowelSequence[currentVowelIndex]) {
+			consecutiveCount++;
+
+			// the mod here, ensures that we will keep looping through the vowels sequence. Because when we reach 5, then we mod by 5%, meaning that we set the currentVowelIndex (vowel being checked) to 0, and we continue the cycle for finding consecutive vowels. The currentVowelIndex will only ever be 0-4
+			currentVowelIndex = (currentVowelIndex + 1) % vowelSequence.length;
+		}
+	}
+
+	return consecutiveCount;
+}
