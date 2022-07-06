@@ -15,4 +15,3 @@ function getSize(width, height, depth) {
 	const volume = width * height * depth;
 	return [area, volume];
 }
-//E -
