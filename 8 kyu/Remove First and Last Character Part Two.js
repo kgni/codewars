@@ -20,26 +20,27 @@ Examples
 */
 
 // array methods
-function array(arr) {
-	return arr.split(',').slice(1, -1).join(' ') || null;
-}
-
-function array(arr) {
-	arr = arr.split(',');
-
-	if (arr.length < 3) {
-		return null;
-	}
-
-	return arr.slice(1, -1).join(' ');
-}
-
-// With replace all
 
 function array(str) {
-	if (str.length < 4) {
+	// if the length of the original string is less than 3, return null
+
+	if (str.length < 3) {
 		return null;
 	}
 
-	return str.replaceAll(',', ' ').slice(1, -1).trim();
+	// create new string, splitting each number by ",", remove first and last char and join together with a space between.
+	const newStr = str.split(',').slice(1, -1).join(' ');
+
+	// if newStr is an empty string after doing the above, return null
+	if (!newStr) return null;
+
+	return newStr;
+}
+
+console.log(array('1,2,3'));
+
+// one liner, we don't need to check the length of the original string, because if it is below 3, when we are splitting, slicing and joining, then it will be an empty string,
+
+function array(arr) {
+	return arr.split(',').slice(1, -1).join(' ') || null;
 }
