@@ -31,4 +31,3 @@ function replace(s) {
 		})
 		.join('');
 }
-//E -
