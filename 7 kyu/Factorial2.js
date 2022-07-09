@@ -27,3 +27,5 @@ console.log(factorial(1)); // 1
 console.log(factorial(4)); // 24
 console.log(factorial(7)); // 5040
 console.log(factorial(17)); // 355687428096000
+
+// could also be done with recursion, but it seems to be highly ineffective compared to a for loop.
