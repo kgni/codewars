@@ -16,7 +16,7 @@ solution({a: 1, b: '2'}) // should return "a = 1,b = 2"
 //R - string
 function solution(pairs) {
 	let str = '';
-	// loop through string, and add each key value pair as a string
+	// loop through string (for in loop), and add each key value pair as a string
 	for (let key in pairs) {
 		str += `${key} = ${pairs[key]},`;
 	}
