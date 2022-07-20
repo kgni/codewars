@@ -34,5 +34,4 @@ function validateHello(greetings) {
 //E -
 
 console.log(validateHello('ahoj'));
-
 console.log(validateHello('meh'));
