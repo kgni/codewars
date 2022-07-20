@@ -30,21 +30,35 @@ A Boolean value (True or False).
 
 //E
 function logicalCalc(array, op) {
-	// for op === 'AND' we want to use .every method on the array and check if every element in the array is true
-	if (op === 'AND') {
-		return array.every((el) => el === true);
-	}
+	return array.reduce((prev, curr) => {
+		if (op === 'AND') {
+			return prev && curr;
+		}
 
-	// for op === 'OR', we want to ues .every method, and check if it includes true
+		if (op === 'OR') {
+			return prev || curr;
+		}
 
-	if (op === 'OR') {
-		return array.includes(true);
-	}
+		if (op === 'XOR') {
+			if ((prev ^ curr) === 1) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	});
+}
 
-	// for op === 'XOR, we wanna
-	if (op === 'XOR') {
-		return false;
-	}
+// done with an object passed in the reducer:
+
+const ops = {
+	AND: (a, b) => a && b,
+	OR: (a, b) => a || b,
+	XOR: (a, b) => a !== b,
+};
+
+function logicalCalc(array, op) {
+	return array.reduce(ops[op]);
 }
 
 console.log(logicalCalc([true, false], 'AND')); // false
@@ -52,3 +66,5 @@ console.log(logicalCalc([true, true], 'AND')); // true
 console.log(logicalCalc([true, false], 'OR')); // true
 console.log(logicalCalc([false, false], 'OR')); // false
 console.log(logicalCalc([true, false], 'XOR')); // false
+
+console.log(logicalCalc([false], 'AND'));
