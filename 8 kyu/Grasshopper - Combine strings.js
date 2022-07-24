@@ -12,12 +12,6 @@ returns:
 'James Stevens'
 */
 
-//PREP
-
-//P -
-//R -
-
 function combineNames(firstName, lastName) {
 	return `${firstName} ${lastName}`;
 }
-//E -
